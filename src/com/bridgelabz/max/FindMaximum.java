@@ -6,7 +6,6 @@ import java.util.Collections;
 public class FindMaximum<T extends Comparable<T>>{
         ArrayList<T> list = new ArrayList<T>();
 
-
         //contructor accept multiple arguments
         FindMaximum(T... inputs){
             for (T value : inputs){
