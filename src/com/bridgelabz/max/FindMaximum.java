@@ -22,9 +22,17 @@ public class FindMaximum<T extends Comparable<T>>{
             Collections.sort(list);
             // last position holds the max value
             T maxValue = list.get(list.size() - 1);
-            System.out.println("Maximum : " + maxValue);
+            showMaxValue(list,maxValue);
             return maxValue;
         }
+
+    public static <T> void showMaxValue(ArrayList<T> list,T maxValue) {
+        System.out.println("\nInput values : ");
+        for (T value : list){
+            System.out.print(value +" , ");
+        }
+        System.out.println("\nMaximum : " + maxValue);
+    }
 
 
         public static void main(String[] args) {
